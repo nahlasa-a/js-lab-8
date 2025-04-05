@@ -16,3 +16,6 @@ const student = {
 };
 
 student.displayInfo();
+console.log(`Student Name: ${student.name}`);
+console.log(`Student Age: ${student.age}`);
+student.displayInfo();
