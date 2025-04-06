@@ -26,3 +26,6 @@ console.log("JSON String:", studentJSON);
 const newStudent = JSON.parse(studentJSON);
 console.log("New Student Object:", newStudent);
 
+const { name, courses } = student;
+console.log("Student Name:", name);
+console.log("Courses:", courses);
