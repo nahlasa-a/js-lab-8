@@ -22,3 +22,7 @@ student.displayInfo();
 
 const studentJSON = JSON.stringify(student);
 console.log("JSON String:", studentJSON);
+
+const newStudent = JSON.parse(studentJSON);
+console.log("New Student Object:", newStudent);
+
