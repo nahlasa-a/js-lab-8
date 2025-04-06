@@ -29,3 +29,7 @@ console.log("New Student Object:", newStudent);
 const { name, courses } = student;
 console.log("Student Name:", name);
 console.log("Courses:", courses);
+
+const scores = [100, 97, 90, 100, 100];
+const [score1, score2] = scores;
+console.log("Score 1:", score1);
