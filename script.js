@@ -33,6 +33,11 @@ console.log("Courses:", courses);
 const scores = [100, 97, 90, 100, 100];
 const [score1, score2] = scores;
 console.log("Score 1:", score1);
+console.log("Score 2:", score2);
 
 const clonedStudent = { ...student, graduationYear: 2027 };
 console.log("Cloned Student with Graduation Year:" , clonedStudent);
+
+const additionalCourses = ["Numeric Computing", "Advanced Front-End Programming", "Introduction to Asrt & Sciences", "Database Programming", "Object-Oriented Programming"];
+const allCourses = [...student.courses, ...additionalCourses];
+console.log("All Courses:", allCourses);
