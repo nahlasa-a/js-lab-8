@@ -8,16 +8,21 @@ const student = {
     courses: ["Algorithms", "Database Design", "Operating Systems", "Web Programming", "JavaScript"],
     
     displayInfo: function() {
-        console.log(`Name: ${this.name}`);
-        console.log(`Age: ${this.age}`);
-        console.log(`Enrolled: ${this.enrolled ? "Yes" : "No"}`);
-        console.log(`Courses: ${this.courses.join(", ")}`);
+        return 'Student Name: ${this.name}, Age: ${this.age}, Program: ${this.program}, College: ${this.college}, Courses: ${this.courses.join(", ")}, Enrolled: ${this.enrolled}';
+    },
+
+    addCourse: function(courseName) {
+        this.courses.push(courseName);
+        return `Added course: ${courseName}`;
+    },
+    getTotalCourses: function() {
+        return this.courses.length;
     }
 };
 
 student.displayInfo();
 console.log(`Student Name: ${student.name}`);
-console.log(`Student Age: ${student.age}`);
+console.log(`Age: ${student.age}`);
 student.displayInfo();
 
 const studentJSON = JSON.stringify(student);
